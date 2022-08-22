@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inknut Antiqua', serif;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none; 
+}
+/* HEADER */
+.header{
+    border: rgb(0, 0, 0) 2px solid;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.header .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 15px;
+    align-items:center;
+    justify-content: space-between;
+}
+.header .navbar .logo{ 
+    width: 150px;
+    height: 150px;
+}
+.header .navbar .list{
+    display: flex;
+
+    background-color: black;
+}
+.header .navbar .list .listItem{
+    background-color:black;
+    display: flex;
+    font-size: 25px;
+    margin: 15px;
+}
+.header .navbar .list .listItem a{
+    color: white;
+    text-decoration: none;
+}
+.header .navbar .list .listItem a:hover{
+    color: dimgray;
+    font-weight: bold;
+}
+
+.header .navbar .buscar{
+    border: rgb(246, 2, 2) 4px solid;
+    display: inline-flex; 
+}
+/* BANNER */
+main .banner{
+    width: 100%;
+    height: 475px;
+
+}
+/* TITULO DE TODOS LOS HTML */
+main h1{
+    color: white;
+    border: black 2px solid;
+    padding: 15px;
+    background-color: rgb(39, 36, 36); 
+    text-align: center;
+    font-size: 42px;
+}
+
+/* MAIN INICIO FOTOS */
+ .grid-container{
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+ }
+.grid-container img{
+    height: 400px;
+    overflow: hidden;
+}
+/* MAIN PRODUCTOS */
+.mainProductos .contCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px 4px 4px 4px;
+    justify-content: start;
+}
+.mainProductos .contCards .productos{
+    width: 30rem;
+    height: 50rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainProductos .contCards .productos .contImgCard .imgCard{
+    width: 100%;
+    height: 40rem;
+    border-radius: 5%;
+}
+.mainProductos .contCards .productos .contTextCard .tituloCard, .precioCard{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.mainProductos .contCards .productos .contButtonCard .buttonComprar{
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 12px;
+}
+/* CSS FOOTER */
+.footer .listFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+/* MEDIA QUERYS */
+@media (max-width: 1000px){
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+}
+}
+
+
+@media (max-width: 730px){
+    
+    .header .navbar .list{
+        flex-direction: column;}
+
+    .header .navbar .logo{ 
+        width: 100px;
+        height: 100px;}
+    
+    .header .navbar .list .listItem{
+        font-size: 15px;}
+    
+        .grid-container{
+            grid-template-columns: repeat(1,1fr);
+
+}
+}
