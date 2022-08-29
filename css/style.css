@@ -67,7 +67,7 @@ main h1{
 }
 /* DESAFIO ANIMACIONES */
 h1:hover{
-    color: deeppink;
+    color: rgb(224, 21, 21);
     text-decoration:underline;
     transition: .3s;
     transform: skew(-45deg)
